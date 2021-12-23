@@ -9,6 +9,7 @@
 - sticky
 - restartsig to reload config
 - hide-vacant-tags
+- autostart
 
 ### Requires
 
