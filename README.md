@@ -10,8 +10,10 @@
 - restartsig to reload config
 - hide-vacant-tags
 - autostart
+- systray
 
-### Requires
+## Requires
 
-- libxft-bgra
+- [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/)
+
 Add emoji's support for status bar
