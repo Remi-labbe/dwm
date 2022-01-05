@@ -1,5 +1,6 @@
 *.orig
 *.o
+*.rej
 dwm
 config.h
 
