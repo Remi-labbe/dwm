@@ -75,7 +75,6 @@ static Key keys[] = {
 	/* modifier                     key            function        argument */
 	{ MODKEY,                       XK_p,          spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return,     spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_grave,      spawn,          SHCMD("dmenuunicode") },
 	{ MODKEY,                       XK_b,          togglebar,      {0} },
 	{ MODKEY,                       XK_j,          focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,          focusstack,     {.i = -1 } },
@@ -108,8 +107,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                          7)
 	TAGKEYS(                        XK_9,                          8)
 	{ MODKEY|ShiftMask,             XK_r,          quit,           {1} }, // restart dwm
-	{ MODKEY|ShiftMask,             XK_q,          spawn,          SHCMD("dmenusysact") }, // open sysAction dmenu
-	{ MODKEY,                       XK_backslash,  spawn,          SHCMD("slock") }, // restart dwm
+	{ MODKEY,                       XK_grave,      spawn,          SHCMD("dm_unicode") }, // emoji picker
+	{ MODKEY|ShiftMask,             XK_q,          spawn,          SHCMD("dm_sysact") }, // open sysAction dmenu
+	{ MODKEY,                       XK_backslash,  spawn,          SHCMD("dm_maim") }, // screenshot
     /* Function keys */
     // Brightness
   { 0, XF86XK_MonBrightnessUp,                spawn,          SHCMD("xbacklight -inc 5; kill -36 $(pidof dwmblocks)")},
